@@ -24,11 +24,12 @@ function selecionar(id) {
         console.log(venceu)
         
         botao.innerHTML = player
+        let playerAnterior = player
         player = player === "X" ? "O" : "X";
         statusMsg = mensagem.textContent = "É a vez de " + player + "!"
 
         if(isAlive === false && venceu === true){
-            statusMsg = mensagem.textContent = player + " venceu!"
+            statusMsg = mensagem.textContent = playerAnterior + " venceu!"
         }
         else if(isAlive === false && venceu === false){
             statusMsg = mensagem.textContent = "Empate! Deu Velha."
