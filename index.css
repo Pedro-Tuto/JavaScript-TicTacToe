@@ -1,0 +1,56 @@
+#Titulo {
+    color: rgb(255, 255, 255);
+    font-size: 10vh;
+    font: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.7)), url("fundo.jpg");
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    text-align: center;
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 25vw;
+    height: 30vh;
+    margin: 10vw auto;
+}
+
+.cell{
+    color: rgb(255, 0, 119);
+    font-family: "Permanent Marker", cursive;
+    box-shadow: 0 0 0 1px yellowgreen;
+    font-size: 2vw;
+    text-align: center;
+    resize: none;
+    padding: none;
+}
+
+#reset {
+    color: rgb(255, 0, 119);
+    font-family: "Permanent Marker", cursive;
+    background-color: cyan;
+    border-color: white;
+    width: 15vh;
+    height: 10vh;
+    font-size: 2vh;
+    font: bold;
+}
+
+#status{
+    color: white;
+    font-family: "Permanent Marker";
+    font: bold;
+}
+
